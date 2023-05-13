@@ -16,12 +16,15 @@
     grid-template-rows: repeat(8, 1fr); 
     .producto-hc{ 
         @include alinear-centro; 
-        margin: 20px; 
+        margin: 20px;
+        border-radius: 10px;
+        background-color: $color-fondo-rosa; 
         }
 
         h3{
             font-family: $fuente-secundaria;
             font-size: 17px;
+            color: $color-negro;
             
         }
         .img-hc{ 

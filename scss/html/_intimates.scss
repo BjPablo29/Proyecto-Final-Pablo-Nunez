@@ -16,24 +16,29 @@
     .producto-intimates{ 
         @include alinear-centro; 
         margin: 20px;
-        
-        h3{
-            font-family: $fuente-secundaria;
-            font-size: 25px;
-        }
+        border-radius: 10px;
+        background-color: $color-negro;
 
-        h4{
-            font-family: $fuente-secundaria;
-            font-size: 20px;
-        }
+        div{
+            background-color: $color-negro;
+            @include alinear-centro;
+            color: $color-blanco;
+            border-radius: 10px;
+            padding: 10px;
 
+            h3,h4{
+                font-family: $fuente-secundaria;
+                font-size: 20px;
+            }
+        }
         .img-intimates{ 
             width: 300px; 
             height: 300px; 
             object-fit: cover; 
         } 
-    }   
-} 
+    }
+}   
+ 
 
 /*media queries tablet de intimates*/ 
 @media screen and (min-width:600px){    

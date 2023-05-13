@@ -1,4 +1,9 @@
 /* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /*estilos generales*/
 /*estilos del header*/
 header {
@@ -113,10 +118,13 @@ footer {
     display: grid;
     justify-items: center;
     align-items: center;
-    margin: 20px; }
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #f4c6b8; }
   .contenedor-productos-hc h3 {
     font-family: calibri;
-    font-size: 17px; }
+    font-size: 17px;
+    color: black; }
   .contenedor-productos-hc .img-hc {
     height: 100%;
     width: 100%;
@@ -157,13 +165,20 @@ footer {
     display: grid;
     justify-items: center;
     align-items: center;
-    margin: 20px; }
-    .contenedor-productos-intimates .producto-intimates h3 {
-      font-family: calibri;
-      font-size: 25px; }
-    .contenedor-productos-intimates .producto-intimates h4 {
-      font-family: calibri;
-      font-size: 20px; }
+    margin: 20px;
+    border-radius: 10px;
+    background-color: black; }
+    .contenedor-productos-intimates .producto-intimates div {
+      background-color: black;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      color: whitesmoke;
+      border-radius: 10px;
+      padding: 10px; }
+      .contenedor-productos-intimates .producto-intimates div h3, .contenedor-productos-intimates .producto-intimates div h4 {
+        font-family: calibri;
+        font-size: 20px; }
     .contenedor-productos-intimates .producto-intimates .img-intimates {
       width: 300px;
       height: 300px;
