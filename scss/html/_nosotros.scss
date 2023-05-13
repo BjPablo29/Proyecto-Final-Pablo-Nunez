@@ -22,11 +22,13 @@
     .contenedor-img-nosotros{
         display: grid; 
         grid-template-columns: 90%; 
-        grid-template-rows: repeat(2,50%);
+        grid-template-rows: repeat(2, min-content);
+        margin-bottom: 5px;
+        justify-content: center;
+        gap: 5px;
 
         .img-nosotros{ 
             @include img-responsive; 
-             margin-bottom: 5px;
         } 
     } 
 } 

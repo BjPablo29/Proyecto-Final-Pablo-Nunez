@@ -1,9 +1,4 @@
 /* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 /*estilos generales*/
 /*estilos del header*/
 header {
@@ -208,12 +203,14 @@ footer {
   .main-nosotros .contenedor-img-nosotros {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: repeat(2, 50%); }
+    grid-template-rows: repeat(2, min-content);
+    margin-bottom: 5px;
+    justify-content: center;
+    gap: 5px; }
     .main-nosotros .contenedor-img-nosotros .img-nosotros {
       height: 100%;
       width: 100%;
-      object-fit: cover;
-      margin-bottom: 5px; }
+      object-fit: cover; }
 
 /*estilos contacto*/
 .contenedor-contacto {
