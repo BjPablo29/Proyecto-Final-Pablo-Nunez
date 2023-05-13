@@ -119,12 +119,13 @@ footer {
     justify-items: center;
     align-items: center;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #f4c6b8; }
   .contenedor-productos-hc h3 {
     font-family: calibri;
-    font-size: 17px;
-    color: black; }
+    font-size: 15px;
+    color: black;
+    font-weight: bold; }
   .contenedor-productos-hc .img-hc {
     height: 100%;
     width: 100%;

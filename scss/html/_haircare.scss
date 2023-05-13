@@ -17,14 +17,15 @@
     .producto-hc{ 
         @include alinear-centro; 
         margin: 20px;
-        border-radius: 10px;
+        border-radius: 20px;
         background-color: $color-fondo-rosa; 
         }
 
         h3{
             font-family: $fuente-secundaria;
-            font-size: 17px;
+            font-size: 15px;
             color: $color-negro;
+            font-weight: bold
             
         }
         .img-hc{ 
