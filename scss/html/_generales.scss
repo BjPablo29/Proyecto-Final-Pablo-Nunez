@@ -1,0 +1,66 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos generales*/
+
+/*estilos del header*/
+
+header{ 
+    background-color: $color-fondo-rosa; 
+    border-style: solid; 
+    margin-bottom: 10px;
+    @include fuente-principal;
+    
+    nav{
+        div{
+            ul{
+                li{
+                    .color-navbar{ 
+                        color:$color-negro;
+                        font-size: 20px; 
+                        font-weight: bold; 
+                        text-decoration: underline; 
+                    }
+                    .color-navbar:hover{ 
+                        background-color: $color-negro; 
+                        color: $color-blanco; 
+                    } 
+                }
+            }
+        }
+    }    
+}
+
+/*estilos para parrafos*/
+
+p{
+    font-family: $fuente-secundaria;
+}
+
+
+/*estilos del footer*/
+footer{ 
+    background:linear-gradient(to right, $color-fondo-rosa, $color-blanco); 
+    display: grid; 
+
+    ul{ 
+        display: grid; 
+        grid-template-columns: 8fr 0.66fr 0.66fr 0.66fr ; 
+        list-style: none;
+        gap: 2px; 
+
+        li{
+            align-items: center;
+            display: grid;
+
+            p{ 
+                color: $color-negro;  
+                font-size: 25px; 
+                display: inline-block; 
+                @include fuente-principal;
+            } 
+        }      
+    }
+}
+

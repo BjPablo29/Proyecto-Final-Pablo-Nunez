@@ -1,0 +1,58 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos intimates*/ 
+.h2-intimates{ 
+    text-align: center; 
+    margin-bottom: 35px; 
+    @include fuente-principal; 
+} 
+.contenedor-productos-intimates{ 
+    @include alinear-centro; 
+    grid-template-columns: 100%; 
+    grid-template-rows: repeat(6, 1fr);
+    
+    .producto-intimates{ 
+        @include alinear-centro; 
+        margin: 20px;
+        
+        h3{
+            font-family: $fuente-secundaria;
+            font-size: 25px;
+        }
+
+        h4{
+            font-family: $fuente-secundaria;
+            font-size: 20px;
+        }
+
+        .img-intimates{ 
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover; 
+        } 
+    }   
+} 
+
+/*media queries tablet de intimates*/ 
+@media screen and (min-width:600px){    
+    .contenedor-productos-intimates{ 
+        @include alinear-centro; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr);   
+    } 
+} 
+
+/*media queries desktop de intimates*/
+
+@media screen and (min-width:1024px){
+    .contenedor-productos-intimates{ 
+        @include alinear-centro; 
+        grid-template-columns:repeat(3,33%); 
+        grid-template-rows: repeat(2,50%);  
+    } 
+} 
+ 
+ 
+

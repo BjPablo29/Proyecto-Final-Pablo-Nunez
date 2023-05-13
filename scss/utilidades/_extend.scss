@@ -1,0 +1,41 @@
+//import
+@import "mixin";
+/*estilos generales en algunas paginas utilizando extend*/
+
+//disposicion para los h1
+
+%disposicion-h1{
+    text-align: center; 
+    text-decoration: underline; 
+    margin-bottom: 30px;
+    @include fuente-principal;
+}
+
+//estilo para los parrafos contenedores de las paginas de venta
+
+%contenedores-parrafos-ventas{
+    text-align: center; 
+    margin-left: 20%; 
+    margin-right: 20%; 
+    margin-bottom: 40px;
+}
+
+//aplicando extend 
+
+.h1-haircare{ 
+    @extend %disposicion-h1;
+}
+.h1-intimates{ 
+    @extend %disposicion-h1;
+}
+.contenedor-parrafos-haircare{ 
+    @extend %contenedores-parrafos-ventas;
+}
+.contenedor-parrafos-intimates{ 
+    @extend %contenedores-parrafos-ventas; 
+}
+.main-nosotros{
+    .h1-nosotros{ 
+        @extend %disposicion-h1; 
+    }
+}  

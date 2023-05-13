@@ -1,0 +1,49 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+
+/*estilos haircare*/ 
+.h2-haircare{ 
+    text-align: center; 
+    margin-bottom: 35px; 
+    @include fuente-principal; 
+} 
+
+.contenedor-productos-hc{ 
+    @include alinear-centro; 
+    grid-template-columns: 100%; 
+    grid-template-rows: repeat(8, 1fr); 
+    .producto-hc{ 
+        @include alinear-centro; 
+        margin: 20px; 
+        }
+
+        h3{
+            font-family: $fuente-secundaria;
+            font-size: 17px;
+            
+        }
+        .img-hc{ 
+            @include img-responsive; 
+        }  
+} 
+
+/*media queries tablet de haircare*/ 
+@media screen and (min-width:600px){    
+    .contenedor-productos-hc{ 
+        @include alinear-centro;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(4, 1fr);    
+    }
+} 
+
+/*media queries desktop de haircare*/ 
+
+@media screen and (min-width:1024px){ 
+    .contenedor-productos-hc{ 
+        @include alinear-centro; 
+        grid-template-columns:repeat(3,33%); 
+        grid-template-rows: repeat(3,33%);  
+    }
+} 

@@ -1,0 +1,54 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos del index*/
+
+.bienvenida{ 
+    text-align: center; 
+    margin-bottom: 5rem; 
+    text-decoration: underline;
+    @include fuente-principal;  
+}
+
+.contenedor-portadas{
+    .portada-uno{
+        @include alinear-centro;
+        @include disposicion-portadas;
+        a{
+            .img-uno{ 
+                @include img-responsive;
+            }
+        }
+        .parrafos-portadas{ 
+            justify-self: center; 
+            width: 60%; 
+        }   
+    }
+    .portada-dos{
+        @include alinear-centro;
+        @include disposicion-portadas; 
+        a{
+            .img-dos{ 
+                @include img-responsive; 
+            }
+        }
+        .parrafos-portadas{ 
+            justify-self: center; 
+            width: 60%; 
+        }    
+    } 
+}
+
+/*media queries desktop del index*/ 
+
+@media screen and (min-width:1024px){ 
+    .contenedor-portadas{ 
+        display: grid; 
+        grid-template-columns: repeat(2,50%); 
+        width: 100%; 
+    }
+}
+ 
+
+ 

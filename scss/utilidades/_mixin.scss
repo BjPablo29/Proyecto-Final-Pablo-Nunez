@@ -1,0 +1,27 @@
+//mixin de alineacion
+
+@mixin alinear-centro{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+//mixin para las portadas
+@mixin disposicion-portadas{
+    grid-template-rows: 0.6fr 0.4fr; 
+    grid-template-columns: 1fr;
+}
+
+//mixin fuente
+@mixin fuente-principal{
+    font-family: 'Anuphan', sans-serif; 
+    font-family: 'Pompiere', cursive; 
+}
+
+//mixin para imagenes
+@mixin img-responsive{
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+}
+

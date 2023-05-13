@@ -1,0 +1,16 @@
+/* reset */ 
+
+*{ 
+     margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+//imports
+@import "html/generales";
+@import "utilidades/extend";
+@import "html/index";
+@import "html/haircare";
+@import "html/intimates";
+@import "html/nosotros";
+@import "html/contacto";
